@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f2;
+  }
+  
+  .title ul {
+    font-family: 'Georgia', serif;
+    color: white;
+    background-color: #08439c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .title ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: block;
+  }
+  
+  .title ul li a:hover {
+    background-color: #2196F3;
+    color: black;
+  }
+  
+  .title2, .text {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    width: 100%;
+    max-width: 1349px;
+    margin: 0 auto;
+  }
+  
+  .text {
+    font-size: 20px;
+    padding: 0 10px 50px 10px;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1349px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1349px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 70px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 20px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #print, #cedula {
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: none;
+    background-color: #f0f4f8;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 1349px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cedula {
+    background-color: #e0f7fa;
+    border: 1px solid #00acc1;
+    color: #00796b;
+  }
+  
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #08439c, #f06292);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .title ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .title2, .text {
+      font-size: 18px;
+    }
+  
+    label {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 15px;
+      width: 100%;
+    }
+  
+    #print, #cedula {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title ul {
+      font-size: 14px;
+    }
+  
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .title2, .text {
+      font-size: 16px;
+    }
+  
+    button {
+      font-size: 12px;
+    }
+  }
+  
+  
