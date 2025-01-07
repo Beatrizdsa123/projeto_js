@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora de Cédulas e Moedas</title>
+</head>
+
+<body>
+  <div class="title"> 
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#form">Calculadora</a></li>
+    </ul>
+  </div>
+  <img id="inicio" src="projeto\imguv.jpg" width="1349px" height="600px" alt="My Image">
+
+  <h4 id="sobre" class="title2">Bem-vindo à nossa Calculadora de Cédulas!</h4>
+  <p class="text">
+    Facilitamos o seu dia a dia! Com nossa ferramenta, você pode calcular rapidamente a quantidade de cédulas necessárias para qualquer valor. É simples, rápido e eficiente.
+    Digite o valor desejado e veja a divisão das cédulas que você precisa. Se você tem alguma dúvida ou precisa de assistência, estamos à disposição!
+  </p>
+
+  <div class="container">
+    <form id="form">
+      <label for="num">Número: </label>
+      <input type="number" id="num" name="num" placeholder="Digite um número" required>
+      <br>
+      <button type="button" onclick="verificar()">Enviar</button>
+    </form>
+  </div>
+
+  <section class="resultado">
+    <div id="print"></div>
+    <br>
+    <div id="cedula"></div>
+  </section>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
